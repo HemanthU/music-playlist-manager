@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Playlist Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Music Playlist Manager</h1>
+    <p class="subtitle">Frontend Interface (Matches C Backend Menu)</p>
+
+    <input type="text" id="songName" placeholder="Enter song name">
+
+    <div class="menu">
+        <button onclick="addSong()">1. Add Song</button>
+        <button onclick="deleteSong()">2. Delete Song</button>
+        <button onclick="playCurrent()">3. Play Current Song</button>
+        <button onclick="playNext()">4. Play Next Song</button>
+        <button onclick="playPrevious()">5. Play Previous Song</button>
+        <button onclick="searchSong()">6. Search Song</button>
+        <button onclick="displayPlaylist()">7. Display Playlist</button>
+        <button onclick="exitProgram()" class="exit">8. Exit</button>
+    </div>
+
+    <p class="note">
+        Backend logic is implemented in C and executed locally.
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
