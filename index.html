@@ -7,32 +7,44 @@
 </head>
 <body>
 
-<div class="player">
-    <div class="album-art">
-        🎵
+<div class="app">
+    <div class="sidebar">
+        <h2>🎶 My Music</h2>
+        <ul>
+            <li>Home</li>
+            <li>Playlist</li>
+            <li>Library</li>
+        </ul>
     </div>
 
-    <h2 id="nowPlaying">Now Playing</h2>
-    <p class="song">C Backend Playlist</p>
+    <div class="main">
+        <div class="now-playing">
+            <div class="cover">🎵</div>
+            <div class="details">
+                <h3>Now Playing</h3>
+                <p>C Backend Playlist</p>
+            </div>
+        </div>
 
-    <input type="text" id="songName" placeholder="Enter song name">
+        <input type="text" id="songName" placeholder="Enter song name">
 
-    <div class="controls">
-        <button onclick="playPrevious()">⏮</button>
-        <button onclick="playCurrent()">▶</button>
-        <button onclick="playNext()">⏭</button>
+        <div class="controls">
+            <button onclick="playPrevious()">⏮</button>
+            <button class="play" onclick="playCurrent()">▶</button>
+            <button onclick="playNext()">⏭</button>
+        </div>
+
+        <div class="actions">
+            <button onclick="addSong()">Add</button>
+            <button onclick="deleteSong()">Delete</button>
+            <button onclick="searchSong()">Search</button>
+            <button onclick="displayPlaylist()">Display</button>
+        </div>
+
+        <p class="note">
+            Backend implemented in C using Circular Doubly Linked List
+        </p>
     </div>
-
-    <div class="playlist-actions">
-        <button onclick="addSong()">➕ Add</button>
-        <button onclick="deleteSong()">🗑 Delete</button>
-        <button onclick="searchSong()">🔍 Search</button>
-        <button onclick="displayPlaylist()">📄 Display</button>
-    </div>
-
-    <p class="note">
-        Backend implemented in C (Circular Doubly Linked List)
-    </p>
 </div>
 
 <script src="script.js"></script>
