@@ -35,3 +35,4 @@ function searchSong() {
 function displayPlaylist() {
     alert("Display Playlist\n(C Backend)");
 }
+ 
