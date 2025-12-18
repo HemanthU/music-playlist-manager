@@ -7,25 +7,31 @@
 </head>
 <body>
 
-<div class="container">
-    <h1>Music Playlist Manager</h1>
-    <p class="subtitle">Frontend Interface (Matches C Backend Menu)</p>
+<div class="player">
+    <div class="album-art">
+        🎵
+    </div>
+
+    <h2 id="nowPlaying">Now Playing</h2>
+    <p class="song">C Backend Playlist</p>
 
     <input type="text" id="songName" placeholder="Enter song name">
 
-    <div class="menu">
-        <button onclick="addSong()">1. Add Song</button>
-        <button onclick="deleteSong()">2. Delete Song</button>
-        <button onclick="playCurrent()">3. Play Current Song</button>
-        <button onclick="playNext()">4. Play Next Song</button>
-        <button onclick="playPrevious()">5. Play Previous Song</button>
-        <button onclick="searchSong()">6. Search Song</button>
-        <button onclick="displayPlaylist()">7. Display Playlist</button>
-        <button onclick="exitProgram()" class="exit">8. Exit</button>
+    <div class="controls">
+        <button onclick="playPrevious()">⏮</button>
+        <button onclick="playCurrent()">▶</button>
+        <button onclick="playNext()">⏭</button>
+    </div>
+
+    <div class="playlist-actions">
+        <button onclick="addSong()">➕ Add</button>
+        <button onclick="deleteSong()">🗑 Delete</button>
+        <button onclick="searchSong()">🔍 Search</button>
+        <button onclick="displayPlaylist()">📄 Display</button>
     </div>
 
     <p class="note">
-        Backend logic is implemented in C and executed locally.
+        Backend implemented in C (Circular Doubly Linked List)
     </p>
 </div>
 
